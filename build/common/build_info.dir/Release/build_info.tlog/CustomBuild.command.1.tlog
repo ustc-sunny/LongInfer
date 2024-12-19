@@ -1,0 +1,24 @@
+^D:\DEVELOPE\LONGINFER-PROJECT\COMPARISON\LLAMA.CPP\BUILD\CMAKEFILES\8EB309D20BCCB024A9A9860A0D78967B\BUILD-INFO.CPP.RULE
+setlocal
+cd D:\Develope\LongInfer-Project\Comparison\llama.cpp
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DMSVC=1 -DCMAKE_C_COMPILER_VERSION=19.42.34433.0 -DCMAKE_C_COMPILER_ID=MSVC -DCMAKE_VS_PLATFORM_NAME=x64 "-DCMAKE_C_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe" -P D:/Develope/LongInfer-Project/Comparison/llama.cpp/common/cmake/build-info-gen-cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DEVELOPE\LONGINFER-PROJECT\COMPARISON\LLAMA.CPP\COMMON\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Develope/LongInfer-Project/Comparison/llama.cpp -BD:/Develope/LongInfer-Project/Comparison/llama.cpp/build --check-stamp-file D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/common/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

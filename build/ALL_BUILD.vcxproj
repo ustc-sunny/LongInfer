@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E0A8A7CC-8353-340F-99F7-529F71A298B5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.6.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Develope/LongInfer-Project/Comparison/llama.cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Develope/LongInfer-Project/Comparison/llama.cpp -BD:/Develope/LongInfer-Project/Comparison/llama.cpp/build --check-stamp-file D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeSystem.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\build-info.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\common.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\git-vars.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\llama-config.cmake.in;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\llama.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Develope/LongInfer-Project/Comparison/llama.cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Develope/LongInfer-Project/Comparison/llama.cpp -BD:/Develope/LongInfer-Project/Comparison/llama.cpp/build --check-stamp-file D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeSystem.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\build-info.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\common.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\git-vars.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\llama-config.cmake.in;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\llama.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Develope/LongInfer-Project/Comparison/llama.cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Develope/LongInfer-Project/Comparison/llama.cpp -BD:/Develope/LongInfer-Project/Comparison/llama.cpp/build --check-stamp-file D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeSystem.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\build-info.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\common.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\git-vars.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\llama-config.cmake.in;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\llama.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Develope/LongInfer-Project/Comparison/llama.cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Develope/LongInfer-Project/Comparison/llama.cpp -BD:/Develope/LongInfer-Project/Comparison/llama.cpp/build --check-stamp-file D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.30\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\3.30.3\CMakeSystem.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\build-info.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\common.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\git-vars.cmake;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\llama-config.cmake.in;D:\Develope\LongInfer-Project\Comparison\llama.cpp\cmake\llama.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\ZERO_CHECK.vcxproj">
+      <Project>{EF5D3BEF-02B7-3CB1-9F7E-1EF080AAC24F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\common\build_info.vcxproj">
+      <Project>{87B74F94-0D88-33F9-978C-B65279E52C7B}</Project>
+      <Name>build_info</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\common\common.vcxproj">
+      <Project>{70C43B5E-8396-3133-AA45-CD902FC7EC94}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\ggml\src\ggml.vcxproj">
+      <Project>{407EDC15-A357-37FA-A102-9033E9A653EF}</Project>
+      <Name>ggml</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\ggml\src\ggml-base.vcxproj">
+      <Project>{F8846D51-D046-3D1F-B711-1BB1AF2F9D84}</Project>
+      <Name>ggml-base</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\ggml\src\ggml-cpu\ggml-cpu.vcxproj">
+      <Project>{E50D151F-A02A-3E9E-BBE4-E5A5F8DDEACF}</Project>
+      <Name>ggml-cpu</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\ggml\src\ggml-cuda\ggml-cuda.vcxproj">
+      <Project>{99E5152A-FC92-351C-8C3B-AFB3E77A1AEB}</Project>
+      <Name>ggml-cuda</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\src\llama.vcxproj">
+      <Project>{90F960D2-7132-3E65-B25E-DC181EC151C1}</Project>
+      <Name>llama</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\batched\llama-batched.vcxproj">
+      <Project>{71891131-818F-3115-BE01-1DEE6BF997EA}</Project>
+      <Name>llama-batched</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\batched-bench\llama-batched-bench.vcxproj">
+      <Project>{8E5E6CF3-8EF2-3C09-85EA-E965B04690D4}</Project>
+      <Name>llama-batched-bench</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\llama-bench\llama-bench.vcxproj">
+      <Project>{DC2A1A6F-3EA2-37D0-9FD6-A11FFF18C22F}</Project>
+      <Name>llama-bench</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\main\llama-cli.vcxproj">
+      <Project>{FDA4ECF7-0211-3888-A0F4-B6963EBD3AA1}</Project>
+      <Name>llama-cli</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\convert-llama2c-to-ggml\llama-convert-llama2c-to-ggml.vcxproj">
+      <Project>{7E0BA252-CFD4-3FED-A2FD-F4E4D6421D10}</Project>
+      <Name>llama-convert-llama2c-to-ggml</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\cvector-generator\llama-cvector-generator.vcxproj">
+      <Project>{BC13DC1B-2225-363F-8278-AF27215F3186}</Project>
+      <Name>llama-cvector-generator</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\embedding\llama-embedding.vcxproj">
+      <Project>{55775D6F-7A9D-3AC8-9455-4670844E0DAF}</Project>
+      <Name>llama-embedding</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\eval-callback\llama-eval-callback.vcxproj">
+      <Project>{71BAFF43-9A0F-3FA7-95F4-811B8A010906}</Project>
+      <Name>llama-eval-callback</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\export-lora\llama-export-lora.vcxproj">
+      <Project>{A4C3FDCE-6220-3516-90D0-28DC59194D87}</Project>
+      <Name>llama-export-lora</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\gbnf-validator\llama-gbnf-validator.vcxproj">
+      <Project>{3321581D-9267-3D4C-89B9-719BB27519A9}</Project>
+      <Name>llama-gbnf-validator</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\gguf\llama-gguf.vcxproj">
+      <Project>{932856B8-0FE1-321D-A450-D3F8638F8676}</Project>
+      <Name>llama-gguf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\gguf-hash\llama-gguf-hash.vcxproj">
+      <Project>{956DD2B7-3BB8-3F9D-9E19-EC48795E8AFD}</Project>
+      <Name>llama-gguf-hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\gguf-split\llama-gguf-split.vcxproj">
+      <Project>{B0C2413E-1970-39BE-B300-6FAB4E9D6113}</Project>
+      <Name>llama-gguf-split</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\gritlm\llama-gritlm.vcxproj">
+      <Project>{127B5813-1AE4-39F9-82EE-DBA971857700}</Project>
+      <Name>llama-gritlm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\imatrix\llama-imatrix.vcxproj">
+      <Project>{8D3D1D0F-16A3-3753-BC32-CFDE9A74EB65}</Project>
+      <Name>llama-imatrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\infill\llama-infill.vcxproj">
+      <Project>{53E6BA85-4663-39B8-B407-39C917BF77C7}</Project>
+      <Name>llama-infill</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\llava\llama-llava-cli.vcxproj">
+      <Project>{34D847C3-9DF4-3717-ADF3-09EE4DB1C099}</Project>
+      <Name>llama-llava-cli</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\lookahead\llama-lookahead.vcxproj">
+      <Project>{DE6C0E12-0855-32A6-B02C-BD081E30082D}</Project>
+      <Name>llama-lookahead</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\lookup\llama-lookup.vcxproj">
+      <Project>{C9357B78-9A98-37FC-A347-F88CA4113E73}</Project>
+      <Name>llama-lookup</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\lookup\llama-lookup-create.vcxproj">
+      <Project>{7A77FAEF-2CF2-380F-94A7-E704BC90B5F7}</Project>
+      <Name>llama-lookup-create</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\lookup\llama-lookup-merge.vcxproj">
+      <Project>{F354540D-BFF0-3436-8305-C4A93063E878}</Project>
+      <Name>llama-lookup-merge</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\lookup\llama-lookup-stats.vcxproj">
+      <Project>{6269CE6A-28F6-3FB0-B14F-9C693D475B33}</Project>
+      <Name>llama-lookup-stats</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\llava\llama-minicpmv-cli.vcxproj">
+      <Project>{C2912081-B23D-305A-AEF0-763A6D50C86F}</Project>
+      <Name>llama-minicpmv-cli</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\parallel\llama-parallel.vcxproj">
+      <Project>{B363A863-07E4-39C4-8268-BB1AF5D42A10}</Project>
+      <Name>llama-parallel</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\passkey\llama-passkey.vcxproj">
+      <Project>{0B0E33FE-2C83-34DC-8ADA-D7F850ED136E}</Project>
+      <Name>llama-passkey</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\perplexity\llama-perplexity.vcxproj">
+      <Project>{53309486-3C2D-311A-BDB8-13F7D08C4BD9}</Project>
+      <Name>llama-perplexity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\pocs\vdot\llama-q8dot.vcxproj">
+      <Project>{DDFF0B29-7D3E-33B1-9DF5-451D3A7D71F6}</Project>
+      <Name>llama-q8dot</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\quantize\llama-quantize.vcxproj">
+      <Project>{DC9E982C-0212-3D92-B15B-4F12CBD3DF59}</Project>
+      <Name>llama-quantize</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\quantize-stats\llama-quantize-stats.vcxproj">
+      <Project>{7A5CAD1A-7619-3A81-893E-B56A6EEEC03A}</Project>
+      <Name>llama-quantize-stats</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\retrieval\llama-retrieval.vcxproj">
+      <Project>{81CC6C5D-307F-33D2-9936-7962E7B35DB2}</Project>
+      <Name>llama-retrieval</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\run\llama-run.vcxproj">
+      <Project>{FF716007-D840-3CE3-B510-6AB5C3022065}</Project>
+      <Name>llama-run</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\save-load-state\llama-save-load-state.vcxproj">
+      <Project>{A6558BD2-5D57-351D-A912-11CB2A2726C5}</Project>
+      <Name>llama-save-load-state</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\server\llama-server.vcxproj">
+      <Project>{929039AD-2328-39BC-8DBE-63EFEFCD27D3}</Project>
+      <Name>llama-server</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\simple\llama-simple.vcxproj">
+      <Project>{7FEF7AC8-FAC4-3CB1-8E1F-C4AFB9A820DC}</Project>
+      <Name>llama-simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\simple-chat\llama-simple-chat.vcxproj">
+      <Project>{05D2DE75-A74D-3A3A-B105-F58FC6FF0BC8}</Project>
+      <Name>llama-simple-chat</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\speculative\llama-speculative.vcxproj">
+      <Project>{E8BB9446-6DE3-3073-A212-5CCDDD181478}</Project>
+      <Name>llama-speculative</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\speculative-simple\llama-speculative-simple.vcxproj">
+      <Project>{69F2BCEF-4781-3D09-8BF2-7EE91A3976C9}</Project>
+      <Name>llama-speculative-simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\tokenize\llama-tokenize.vcxproj">
+      <Project>{2C668202-7790-370C-9967-CC9926E1925D}</Project>
+      <Name>llama-tokenize</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\pocs\vdot\llama-vdot.vcxproj">
+      <Project>{F71A00A1-C563-3CFB-A3F6-6F422C7EEF4D}</Project>
+      <Name>llama-vdot</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\llava\llava.vcxproj">
+      <Project>{A41A040E-F8EC-3D74-ABD9-8177E2655FE0}</Project>
+      <Name>llava</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\llava\llava_shared.vcxproj">
+      <Project>{109E2F07-CDA5-3BAA-B006-0105AA5C0AE0}</Project>
+      <Name>llava_shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\llava\llava_static.vcxproj">
+      <Project>{ABF02ACE-2444-36A1-932A-A618ACB1F7B7}</Project>
+      <Name>llava_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\gguf-hash\sha1.vcxproj">
+      <Project>{431ABE9A-5D2B-37EB-8BA3-23F8911E9DFE}</Project>
+      <Name>sha1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\gguf-hash\sha256.vcxproj">
+      <Project>{E11F80D4-BE65-3C09-B59F-1B1F60B3049D}</Project>
+      <Name>sha256</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-arg-parser.vcxproj">
+      <Project>{FDA2EFBC-970D-3BE7-880B-AA294CDEFA70}</Project>
+      <Name>test-arg-parser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-autorelease.vcxproj">
+      <Project>{4EF0CD78-2D01-389C-91F0-E6C6D01E69FB}</Project>
+      <Name>test-autorelease</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-backend-ops.vcxproj">
+      <Project>{835A41C0-E160-39F9-B2A0-685890276F1E}</Project>
+      <Name>test-backend-ops</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-barrier.vcxproj">
+      <Project>{6F1F175B-1B4F-3C03-AEF2-5BE9421A6030}</Project>
+      <Name>test-barrier</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-c.vcxproj">
+      <Project>{76192402-FAC6-30A9-94B5-462B377B2928}</Project>
+      <Name>test-c</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-chat-template.vcxproj">
+      <Project>{372B7273-9244-3AC9-B609-597B5CBB38D2}</Project>
+      <Name>test-chat-template</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-grammar-integration.vcxproj">
+      <Project>{14A64BB6-6463-3E1B-A36B-7A19EB6210BA}</Project>
+      <Name>test-grammar-integration</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-grammar-parser.vcxproj">
+      <Project>{6420BED9-B2EB-336B-AB17-F1A51E66D408}</Project>
+      <Name>test-grammar-parser</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-json-schema-to-grammar.vcxproj">
+      <Project>{0F585F1B-C29A-3343-BDD6-0452FBF26FA4}</Project>
+      <Name>test-json-schema-to-grammar</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-llama-grammar.vcxproj">
+      <Project>{C43FD93A-0123-3BFD-B4FE-6C37770F62FF}</Project>
+      <Name>test-llama-grammar</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-log.vcxproj">
+      <Project>{3AC69D3D-14B8-33D9-8DC9-59E299AB8F3F}</Project>
+      <Name>test-log</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-model-load-cancel.vcxproj">
+      <Project>{465CD85C-F3C7-300C-998A-FA699273CDED}</Project>
+      <Name>test-model-load-cancel</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-quantize-fns.vcxproj">
+      <Project>{DD5782D0-B5E1-31A4-8C79-3205DE00C87F}</Project>
+      <Name>test-quantize-fns</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-quantize-perf.vcxproj">
+      <Project>{36ACF051-782F-3E7A-A4FA-34A1FB337B81}</Project>
+      <Name>test-quantize-perf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-rope.vcxproj">
+      <Project>{0D377173-C2CD-384B-8124-45A483C3661F}</Project>
+      <Name>test-rope</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-sampling.vcxproj">
+      <Project>{7D05D5C2-0003-300A-A45F-F8133B97BEE0}</Project>
+      <Name>test-sampling</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-tokenizer-0.vcxproj">
+      <Project>{9722E02C-F9FF-3D37-8B13-7A8B02774860}</Project>
+      <Name>test-tokenizer-0</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-tokenizer-1-bpe.vcxproj">
+      <Project>{58E6B41A-AD9F-33DA-AB02-9A76F06B7BC7}</Project>
+      <Name>test-tokenizer-1-bpe</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\tests\test-tokenizer-1-spm.vcxproj">
+      <Project>{06923670-4C38-3E95-98E6-20C19BD72223}</Project>
+      <Name>test-tokenizer-1-spm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\gguf-hash\xxhash.vcxproj">
+      <Project>{475469BF-A6D4-3F40-9284-B0DE4A0EDCCA}</Project>
+      <Name>xxhash</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.6.targets" />
+  </ImportGroup>
+</Project>

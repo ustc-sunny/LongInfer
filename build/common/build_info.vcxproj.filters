@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\common\build-info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\8eb309d20bccb024a9a9860a0d78967b\build-info.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\common\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1986AA62-ED28-380C-AAFD-5AC0FA90ACAE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8513BBE8-3840-3E8F-8CBF-B309A50B8F75}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/ggml/src/ggml-base.dir/MinSizeRel/ggml.obj
+D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/ggml/src/ggml-base.dir/MinSizeRel/ggml-alloc.obj
+D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/ggml/src/ggml-base.dir/MinSizeRel/ggml-backend.obj
+D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/ggml/src/ggml-base.dir/MinSizeRel/ggml-opt.obj
+D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/ggml/src/ggml-base.dir/MinSizeRel/ggml-threading.obj
+D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/ggml/src/ggml-base.dir/MinSizeRel/ggml-quants.obj
+D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/ggml/src/ggml-base.dir/MinSizeRel/ggml-aarch64.obj

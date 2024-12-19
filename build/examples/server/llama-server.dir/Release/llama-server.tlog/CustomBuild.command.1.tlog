@@ -1,0 +1,80 @@
+^D:\DEVELOPE\LONGINFER-PROJECT\COMPARISON\LLAMA.CPP\BUILD\CMAKEFILES\420E427A47FD7C9D234416AFAD3B314F\INDEX.HTML.HPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DINPUT=D:/Develope/LongInfer-Project/Comparison/llama.cpp/examples/server/public/index.html -DOUTPUT=D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/examples/server/index.html.hpp -P D:/Develope/LongInfer-Project/Comparison/llama.cpp/scripts/xxd.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DEVELOPE\LONGINFER-PROJECT\COMPARISON\LLAMA.CPP\BUILD\CMAKEFILES\420E427A47FD7C9D234416AFAD3B314F\COMPLETION.JS.HPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DINPUT=D:/Develope/LongInfer-Project/Comparison/llama.cpp/examples/server/public/completion.js -DOUTPUT=D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/examples/server/completion.js.hpp -P D:/Develope/LongInfer-Project/Comparison/llama.cpp/scripts/xxd.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DEVELOPE\LONGINFER-PROJECT\COMPARISON\LLAMA.CPP\BUILD\CMAKEFILES\420E427A47FD7C9D234416AFAD3B314F\LOADING.HTML.HPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DINPUT=D:/Develope/LongInfer-Project/Comparison/llama.cpp/examples/server/public/loading.html -DOUTPUT=D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/examples/server/loading.html.hpp -P D:/Develope/LongInfer-Project/Comparison/llama.cpp/scripts/xxd.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DEVELOPE\LONGINFER-PROJECT\COMPARISON\LLAMA.CPP\BUILD\CMAKEFILES\420E427A47FD7C9D234416AFAD3B314F\DEPS_DAISYUI.MIN.CSS.HPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DINPUT=D:/Develope/LongInfer-Project/Comparison/llama.cpp/examples/server/public/deps_daisyui.min.css -DOUTPUT=D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/examples/server/deps_daisyui.min.css.hpp -P D:/Develope/LongInfer-Project/Comparison/llama.cpp/scripts/xxd.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DEVELOPE\LONGINFER-PROJECT\COMPARISON\LLAMA.CPP\BUILD\CMAKEFILES\420E427A47FD7C9D234416AFAD3B314F\DEPS_MARKDOWN-IT.JS.HPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DINPUT=D:/Develope/LongInfer-Project/Comparison/llama.cpp/examples/server/public/deps_markdown-it.js -DOUTPUT=D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/examples/server/deps_markdown-it.js.hpp -P D:/Develope/LongInfer-Project/Comparison/llama.cpp/scripts/xxd.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DEVELOPE\LONGINFER-PROJECT\COMPARISON\LLAMA.CPP\BUILD\CMAKEFILES\420E427A47FD7C9D234416AFAD3B314F\DEPS_TAILWINDCSS.JS.HPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DINPUT=D:/Develope/LongInfer-Project/Comparison/llama.cpp/examples/server/public/deps_tailwindcss.js -DOUTPUT=D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/examples/server/deps_tailwindcss.js.hpp -P D:/Develope/LongInfer-Project/Comparison/llama.cpp/scripts/xxd.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DEVELOPE\LONGINFER-PROJECT\COMPARISON\LLAMA.CPP\BUILD\CMAKEFILES\420E427A47FD7C9D234416AFAD3B314F\DEPS_VUE.ESM-BROWSER.JS.HPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DINPUT=D:/Develope/LongInfer-Project/Comparison/llama.cpp/examples/server/public/deps_vue.esm-browser.js -DOUTPUT=D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/examples/server/deps_vue.esm-browser.js.hpp -P D:/Develope/LongInfer-Project/Comparison/llama.cpp/scripts/xxd.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DEVELOPE\LONGINFER-PROJECT\COMPARISON\LLAMA.CPP\EXAMPLES\SERVER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Develope/LongInfer-Project/Comparison/llama.cpp -BD:/Develope/LongInfer-Project/Comparison/llama.cpp/build --check-stamp-file D:/Develope/LongInfer-Project/Comparison/llama.cpp/build/examples/server/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

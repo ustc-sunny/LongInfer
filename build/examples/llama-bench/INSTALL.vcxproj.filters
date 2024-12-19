@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\8943692597bd2beb72726483111b8eae\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1986AA62-ED28-380C-AAFD-5AC0FA90ACAE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

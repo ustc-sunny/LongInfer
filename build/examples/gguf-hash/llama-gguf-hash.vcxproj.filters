@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\examples\gguf-hash\gguf-hash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\examples\gguf-hash\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\gguf-hash\xxhash.dir\$(Configuration)\xxhash.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\gguf-hash\sha1.dir\$(Configuration)\sha1.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\gguf-hash\sha256.dir\$(Configuration)\sha256.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{7FA5C70A-FED7-3C80-A84D-375278A95F59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8513BBE8-3840-3E8F-8CBF-B309A50B8F75}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

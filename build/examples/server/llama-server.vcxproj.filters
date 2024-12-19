@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\examples\server\server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\examples\server\utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\examples\server\httplib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\server\index.html.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\server\completion.js.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\server\loading.html.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\server\deps_daisyui.min.css.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\server\deps_markdown-it.js.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\server\deps_tailwindcss.js.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\examples\server\deps_vue.esm-browser.js.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\420e427a47fd7c9d234416afad3b314f\index.html.hpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\420e427a47fd7c9d234416afad3b314f\completion.js.hpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\420e427a47fd7c9d234416afad3b314f\loading.html.hpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\420e427a47fd7c9d234416afad3b314f\deps_daisyui.min.css.hpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\420e427a47fd7c9d234416afad3b314f\deps_markdown-it.js.hpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\420e427a47fd7c9d234416afad3b314f\deps_tailwindcss.js.hpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\build\CMakeFiles\420e427a47fd7c9d234416afad3b314f\deps_vue.esm-browser.js.hpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Develope\LongInfer-Project\Comparison\llama.cpp\examples\server\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1986AA62-ED28-380C-AAFD-5AC0FA90ACAE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9528482E-D782-3F23-B986-3B3D6E11346E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8513BBE8-3840-3E8F-8CBF-B309A50B8F75}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

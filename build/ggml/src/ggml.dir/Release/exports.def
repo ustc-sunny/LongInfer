@@ -1,0 +1,50 @@
+EXPORTS 
+	??_R0?AVbad_alloc@std@@@8 	 DATA
+	??_R0?AVbad_array_new_length@std@@@8 	 DATA
+	??_R0?AVexception@std@@@8 	 DATA
+	??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z
+	??$_Copy_memmove@PEAPEAUggml_backend_device@@PEAPEAU1@@std@@YAPEAPEAUggml_backend_device@@PEAPEAU1@00@Z
+	??$_Copy_memmove@PEAUggml_backend_reg_entry@@PEAU1@@std@@YAPEAUggml_backend_reg_entry@@PEAU1@00@Z
+	??$_Emplace_reallocate@AEBQEAUggml_backend_device@@@?$vector@PEAUggml_backend_device@@V?$allocator@PEAUggml_backend_device@@@std@@@std@@AEAAPEAPEAUggml_backend_device@@QEAPEAU2@AEBQEAU2@@Z
+	??$_Emplace_reallocate@Uggml_backend_reg_entry@@@?$vector@Uggml_backend_reg_entry@@V?$allocator@Uggml_backend_reg_entry@@@std@@@std@@AEAAPEAUggml_backend_reg_entry@@QEAU2@$$QEAU2@@Z
+	??$_Reallocate_grow_by@V<lambda_65e615be2a453ca0576c979606f46740>@@PEBD_K@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAAEAV01@_KV<lambda_65e615be2a453ca0576c979606f46740>@@PEBD_K@Z
+	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@U_String_constructor_concat_tag@1@AEBV01@QEBD_K23@Z
+	??0bad_alloc@std@@QEAA@AEBV01@@Z
+	??0bad_array_new_length@std@@QEAA@AEBV01@@Z
+	??0bad_array_new_length@std@@QEAA@XZ
+	??0exception@std@@QEAA@AEBV01@@Z
+	??0ggml_backend_registry@@QEAA@XZ
+	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ
+	??1?$vector@PEAUggml_backend_device@@V?$allocator@PEAUggml_backend_device@@@std@@@std@@QEAA@XZ
+	??1?$vector@Uggml_backend_reg_entry@@V?$allocator@Uggml_backend_reg_entry@@@std@@@std@@QEAA@XZ
+	??1bad_array_new_length@std@@UEAA@XZ
+	??1exception@std@@UEAA@XZ
+	??1ggml_backend_registry@@QEAA@XZ
+	??_7bad_alloc@std@@6B@
+	??_7bad_array_new_length@std@@6B@
+	??_7exception@std@@6B@
+	?_Throw_bad_array_new_length@std@@YAXXZ
+	?_Xlen_string@std@@YAXXZ
+	?_Xlength@?$vector@PEAUggml_backend_device@@V?$allocator@PEAUggml_backend_device@@@std@@@std@@CAXXZ
+	?_Xlength@?$vector@Uggml_backend_reg_entry@@V?$allocator@Uggml_backend_reg_entry@@@std@@@std@@CAXXZ
+	?deallocate@?$allocator@PEAUggml_backend_device@@@std@@QEAAXQEAPEAUggml_backend_device@@_K@Z
+	?deallocate@?$allocator@Uggml_backend_reg_entry@@@std@@QEAAXQEAUggml_backend_reg_entry@@_K@Z
+	?load_backend@ggml_backend_registry@@QEAAPEAUggml_backend_reg@@PEBD_N@Z
+	?register_backend@ggml_backend_registry@@QEAAXPEAUggml_backend_reg@@PEAX@Z
+	?unload_backend@ggml_backend_registry@@QEAAXPEAUggml_backend_reg@@_N@Z
+	?what@exception@std@@UEBAPEBDXZ
+	ggml_backend_dev_by_name
+	ggml_backend_dev_by_type
+	ggml_backend_dev_count
+	ggml_backend_dev_get
+	ggml_backend_device_register
+	ggml_backend_init_best
+	ggml_backend_init_by_name
+	ggml_backend_init_by_type
+	ggml_backend_load
+	ggml_backend_load_all
+	ggml_backend_reg_by_name
+	ggml_backend_reg_count
+	ggml_backend_reg_get
+	ggml_backend_register
+	ggml_backend_unload
